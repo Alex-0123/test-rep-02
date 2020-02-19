@@ -23,36 +23,39 @@ a {
 }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 24px 0;
+  background: #fff;
 }
 
 .header-wrap {
   display: flex;
   justify-content: space-between;
 }
-.header-wrap .logo {
+
+.logo {
   text-transform: uppercase;
   font-size: 48px;
   font-weight: bold;
 }
-.header-wrap .nav {
+
+.nav {
   display: flex;
 }
-.header-wrap .nav li {
+.nav li {
   margin-left: 40px;
 }
-.header-wrap .nav li:first-child {
+.nav li:first-child {
   margin-left: 0;
 }
-.header-wrap .nav li a {
+.nav li a {
   position: relative;
   line-height: 57px;
 }
-.header-wrap .nav li a:after {
+.nav li a:after {
   display: block;
   content: "";
   width: 100%;
@@ -66,8 +69,35 @@ header {
   transform: scale(0);
   transition: transform .2s;
 }
-.header-wrap .nav li a:hover:after {
+.nav li a:hover:after {
   transform: scale(1);
+}
+
+footer {
+  background: var(--primary-color);
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 24px 0 48px;
+}
+.footer-wrap * {
+  color: #fff;
+}
+.footer-wrap a:after {
+  display: none;
+}
+.footer-wrap .copy {
+  flex: none;
+  width: 100%;
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+.content {
+  height: 800px;
 }
 
 /*# sourceMappingURL=style.css.map */
