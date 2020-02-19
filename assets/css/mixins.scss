@@ -1,0 +1,12 @@
+@mixin afterBlock($width, $height, $top, $left, $bottom, $right, $background) {
+  display: block;
+  content: "";
+  width: $width;
+  height: $height;
+  position: absolute;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  right: $right;
+  background: $background;
+}

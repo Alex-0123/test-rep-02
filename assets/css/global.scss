@@ -4,12 +4,12 @@
 
 body {
   font: 16px/1.2 Arial, sans-serif;
-  color: #222;
+  color: var(--primary-color);
 }
 
 a {
   text-decoration: none;
-  color: #222;
+  color: var(--primary-color);
 }
 
 .container {
