@@ -1,41 +1,42 @@
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 24px 0;
+  background: #fff;
 }
 
 .header-wrap {
   display: flex;
   justify-content: space-between;
+}
 
-  .logo {
-    text-transform: uppercase;
-    font-size: 48px;
-    font-weight: bold;
-  }
+.logo {
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: bold;
+}
 
-  .nav {
-    display: flex;
+.nav {
+  display: flex;
 
-    li {
-      margin-left: 40px;
-      &:first-child {
-        margin-left: 0;
+  li {
+    margin-left: 40px;
+    &:first-child {
+      margin-left: 0;
+    }
+
+    a {
+      position: relative;
+      line-height: 57px;
+      &:after {
+        @include afterBlock(100%, 2px, none, 0, -4px, none, var(--primary-color));
+        transform: scale(0);
+        transition: transform .2s;
       }
-
-      a {
-        position: relative;
-        line-height: 57px;
-        &:after {
-          @include afterBlock(100%, 2px, none, 0, -4px, none, var(--primary-color));
-          transform: scale(0);
-          transition: transform .2s;
-        }
-        &:hover:after {
-          transform: scale(1);
-        }
+      &:hover:after {
+        transform: scale(1);
       }
     }
   }

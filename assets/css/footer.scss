@@ -1,0 +1,25 @@
+footer {
+  background: var(--primary-color);
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 24px 0 48px;
+
+  * {
+    color: #fff;
+  }
+
+  a:after {
+    display: none;
+  }
+
+  .copy {
+    flex: none;
+    width: 100%;
+    margin-top: 12px;
+    font-size: 12px;
+  }
+}
