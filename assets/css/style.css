@@ -75,6 +75,7 @@ header {
 
 footer {
   background: var(--primary-color);
+  background: blue;
 }
 
 .footer-wrap {
